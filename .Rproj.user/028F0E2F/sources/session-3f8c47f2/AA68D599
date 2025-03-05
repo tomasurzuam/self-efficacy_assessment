@@ -3,7 +3,7 @@
     "path": "~/GitHub/self-efficacy_assessment/digital self-efficacy_assessment.qmd",
     "project_path": "digital self-efficacy_assessment.qmd",
     "type": "quarto_markdown",
-    "hash": "110676492",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1739237397419.0,
@@ -22,11 +22,11 @@
         "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1741172401,
+    "lastKnownWriteTime": 1741197830,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1741172401659,
+    "last_content_update": 1741197831062,
     "read_only": false,
     "read_only_alternatives": []
 }
