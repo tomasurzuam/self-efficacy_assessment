@@ -8,7 +8,7 @@
 
 <meta name="author" content="Tomás Urzúa">
 
-<title>Digital Self-efficacy assessment</title>
+<title>ILSA and Digital Self-efficacy</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="digital self-efficacy_assessment_files/libs/clipboard/clipboard.min.js"></script>
@@ -34,11 +54,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="digital self-efficacy_assessment_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="digital self-efficacy_assessment_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="digital self-efficacy_assessment_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="digital self-efficacy_assessment_files/libs/kePrint-0.0.1/kePrint.js"></script>
+
+<link href="digital self-efficacy_assessment_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+</head><body class="fullcontent"><img src="../input/jpg/nudos_bajada.jpg" style="width: 100%;" class="header-image">
 
 
-</head>
+<link rel="stylesheet" href="libs/nudos.css">
 
-<body class="fullcontent">
+
+
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
@@ -46,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Digital Self-efficacy assessment</h1>
+<h1 class="title">ILSA and Digital Self-efficacy</h1>
 </div>
 
 
@@ -69,34 +95,362 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="icils-timss-and-pisa.-three-opportunities-to-approach-digital-self-efficacy" class="level2">
-<h2 class="anchored" data-anchor-id="icils-timss-and-pisa.-three-opportunities-to-approach-digital-self-efficacy">ICILS, TIMSS and PISA. Three opportunities to approach Digital Self-efficacy</h2>
-<p>Within ILSAs, there are two major organizations that have promoted this type of study: the IEA and the OECD. On the one hand, the IEA is the association in charge of leading and conducting two of the most important large-scale assessment studies: International Computer and Information Literacy Study 1 and Trends in International Mathematics and Science Study 2. On the other hand, the OECD is the orchestrator of the Programme for International Student Assessment 3, one of the leading ILSAs in the world. These three studies share the same target population in that they focus on adolescents, specifically young people between the ages of 13 and 15. More importantly, all of the aforementioned studies contain a digital self-efficacy battery, so the following paragraphs will seek to describe at a general level each of the ILSAs, and then to show how they address digital self-efficacy in their evaluative frameworks. Subsequently, a comparative analysis will be made between the digital self-efficacy batteries between cycles of the same study, as well as between different studies, to finally propose a discussion on the successes and failures in the different measurements that have been proposed regarding digital self-efficacy.</p>
-<p>ICILS is a study on digital literacy, which seeks to answer the question: How well are students prepared to study, work and live in a digital world? To this end, the study measures achievement in computer and information literacy (CIL), a concept defined as “an individual’s ability to use computers to investigate, create, and communicate in order to participate effectively at home, at school, in the workplace, and in society” (Julian Fraillon et al., 2013, p.&nbsp;17). It is worth mentioning that this concept is operationalized by ICILS in order to measure digital literacy. The study deploys a complex sample design involving multistage, stratified and cluster sampling techniques (see p.59, Julian Fraillon et al., 2020).</p>
-<p>The first ICILS study cycle was conducted in 2013. It involved 22 educational systems, and was the inaugural milestone of the study that seeks to measure achievement in CIL see on official website. Subsequently, the second cycle of the study occupied 2018, covering only 13 countries, but Computational Thinking domain was added as one of the key aspects to be studied. Currently, the report of the results of the third cycle of the study was recently published, which was conducted in 2023, while the databases will be officially released in March of this year.</p>
+<section id="about-icils-timss-and-pisa" class="level2">
+<h2 class="anchored" data-anchor-id="about-icils-timss-and-pisa">About ICILS, TIMSS and PISA</h2>
+<p>Within the ILSAs, there are two major organizations that have promoted this type of study: the IEA and the OECD. On the one hand, the IEA is the association in charge of leading and conducting two of the most important large-scale assessment studies: International Computer and Information Literacy Study (ICILS) and Trends in International Mathematics and Science Study (TIMSS). On the other hand, the OECD is the orchestrator of the Programme for International Student Assessment (PISA), one of the world’s leading ILSAs. These three studies share the same target population in that they focus on adolescents, specifically 13-15 year olds. Fundamentally, all of the aforementioned studies contain a digital self-efficacy battery, so the following paragraphs will attempt to describe at a general level each of the ILSAs and then show how they address digital self-efficacy in their evaluative frameworks. Subsequently, a comparative analysis will be made between the digital self-efficacy batteries between cycles of the same study, as well as between different studies, to finally propose a discussion on the successes and failures in the different measurements that have been proposed with respect to digital self-efficacy.</p>
+<section id="icils" class="level3">
+<h3 class="anchored" data-anchor-id="icils">ICILS</h3>
+<p>ICILS is a study on digital literacy, which seeks to answer the question: How well are students prepared to study, work and live in a digital world? To this end, the study measures achievement in computer and information literacy (CIL), a concept defined as “an individual’s ability to use computers to investigate, create, and communicate in order to participate effectively at home, at school, in the workplace, and in society” <span class="citation" data-cites="julianfraillon_iea_2013">(<a href="#ref-julianfraillon_iea_2013" role="doc-biblioref">Julian Fraillon et al., 2013, p. 17</a>)</span>. It is worth mentioning that this concept is operationalized by ICILS in order to measure digital literacy. The study deploys a complex sample design involving multistage, stratified and cluster sampling techniques <span class="citation" data-cites="julianfraillon_sample_2020">(see p.59, <a href="#ref-julianfraillon_sample_2020" role="doc-biblioref">Julian Fraillon et al., 2020</a>)</span>.</p>
+<p>The first ICILS study cycle was conducted in 2013. It involved 22 educational systems, and was the inaugural milestone of the study that seeks to measure achievement in CIL (<a href="https://www.iea.nl/studies/iea/icils">see on official website</a>). Subsequently, the second cycle of the study occupied 2018, covering only 13 countries, but Computational Thinking domain was added as one of the key aspects to be studied. Recently, the report of the results of the third cycle of the 2023 study was published, in addition to the release of the databases for free use by the community.</p>
+<p>As mentioned above, ICILS is a study that is framed within the digital theme, so all its sections focus on one aspect of it. In this context, the evaluation framework of this study contains a chapter focused on contextual determinants, which is subdivided into the types of context that influence computer and information literacy, such as the family context, the school context and the individual context. The latter includes attitudinal and behavioral factors. Self-efficacy is placed in this framework.</p>
+<p>To conceptualize self-efficacy, the study paraphrases Bandura’s (1993) definition, stating that self-efficacy is students’ confidence in their own ability to perform tasks in a specific area <span class="citation" data-cites="julianfraillon_iea_2013">(Bandura, 1993, cited in <a href="#ref-julianfraillon_iea_2013" role="doc-biblioref">Julian Fraillon et al., 2013</a>)</span>. Thus, it is made explicit that the questionnaire aims to measure the confidence expressed by students when performing ICT-related tasks. In this sense, ICILS employs the concept of ICT self-efficacy. In addition, mention is made of the previous wave of the study, highlighting the identification of two dimensions of self-efficacy: basic and advanced. This distinction is continued in this study. Finally, literature is presented that supports the idea that self-efficacy is a relevant variable for predicting performance, in this case, in computational and information literacy <span class="citation" data-cites="fraillon_contextual_2019">(see p.&nbsp;41, <a href="#ref-fraillon_contextual_2019" role="doc-biblioref">Fraillon et al., 2019</a>)</span>.</p>
+</section>
+<section id="timss" class="level3">
+<h3 class="anchored" data-anchor-id="timss">TIMSS</h3>
 <p>The second study to be analyzed in this paper is TIMSS, which is conducted by the IEA and PIRLS International Study Center at Boston College’s Lynch School of Education and Human Development. This ILSA, as its name implies, focuses on assessing the performance of fourth and eighth grade students in mathematics and science. In addition, it contains questions related to the students’ context.</p>
-<p>The first TIMSS study was carried out in 1995 and has been conducted periodically every 4 years without fail. Regarding the most recent cycles, it is worth mentioning that TIMMS 2019 was attended by 72 educational systems, while the subsequent cycle carried out in 2023 repeated the same number of participants see on official website. The results of the eighth and final cycle of the study have recently been published, and the next cycle, which is scheduled for 2027, is already in sight. It is important to mention that the sample design of this study is based on a two-stage stratified random sampling, with the sample of schools as the first stage and the selection of the classes of students in each school as the second stage (see p.&nbsp;3.1, Siegel, P. &amp; Foy, P., 2024)</p>
+<p>The first TIMSS study was carried out in 1995 and has been conducted periodically every 4 years without fail. Regarding the most recent cycles, it is worth mentioning that TIMMS 2019 was attended by 72 educational systems, while the subsequent cycle carried out in 2023 repeated the same number of participants (<a href="https://www.iea.nl/studies/iea/timss">see on official website</a>). The results of the eighth and final cycle of the study have recently been published, and the next cycle, which is scheduled for 2027, is already in sight. It is important to mention that the sample design of this study is based on a two-stage stratified random sampling, with the sample of schools as the first stage and the selection of the classes of students in each school as the second stage <span class="citation" data-cites="siegelp._timss_2024">(see p.&nbsp;3.1, <a href="#ref-siegelp._timss_2024" role="doc-biblioref">Siegel, P. &amp; Foy, P., 2024</a>)</span>.</p>
 <p>Regarding the approach to technology in their questionnaires, in the 2011 cycle we found for the first time the presence of questions on this topic, although they only referred to the frequency of computer use at home and at school.</p>
+<p>TIMMS is the study with the least extensive assessment framework on digital issues, so it can be assumed that it is not a section that has been given priority in the questionnaire. Instead, information on student performance in mathematics and science prevails.</p>
+<p>Regarding digital self-efficacy, the TIMMS cycle conducted in 2019 conceptualizes self-efficacy as “Students‘ confidence in using technology,” found in the section “Students’ attitudes toward learning,” where students’ attitudes toward mathematics and science are also highlighted <span class="citation" data-cites="inav.s.mulllis_timss_2019">(see pp.&nbsp;72, <a href="#ref-inav.s.mulllis_timss_2019" role="doc-biblioref">Ina V.S. Mulllis &amp; Michael O. Martin, 2019</a>)</span>. Later, in the 2023 cycle of the same study, the concept changes to “digital self-efficacy”, which is framed under “Information technologies and digital services”. In it, two variables are specified: uses of digital services (1) and digital self-efficacy (2). In neither of the two cycles is there a previous contextualization that supports the presentation of these topics, nor a deep justification of why self-efficacy in digital issues is relevant. Nor is there a conceptualization of self-efficacy as such. Despite all these gaps, the study does employ a specific concept in its two cycles (see p.&nbsp;59, <span class="citation" data-cites="inav.s.mulllis_timss_2023">Ina V.S. Mulllis et al. (<a href="#ref-inav.s.mulllis_timss_2023" role="doc-biblioref">2023</a>)</span>).</p>
+<p>Despite the lack of theoretical depth regarding digital self-efficacy, one of the most interesting features of TIMMS is that, in addition to containing the digital self-efficacy battery, it has self-efficacy batteries for mathematics and science, which could open certain lines of research regarding this specific topic.</p>
+</section>
+<section id="pisa" class="level3">
+<h3 class="anchored" data-anchor-id="pisa">PISA</h3>
 <p>Finally, there is PISA, a study that is organized and executed by the OECD. PISA is characterized by measuring the abilities of 15-year-old adolescents to use their knowledge in reading, mathematics and science to face challenges in real life. This ILSA stands out for the great thematic versatility of its questionnaires. For example, the 2022 cycle contained 7 surveys, which dealt with topics such as financial literacy or good living. In addition, in each cycle of the study, one domain area takes center stage. Particularly, in 2018, the area of reading predominated, while the 2022 study focused especially on the mathematical area.</p>
 <p>PISA originated in 2000, and since that year the study has been carried out periodically every 3 years. The only cycles that escape this rule are those of 2022 and 2025 (next to be carried out), since the pandemic and the subsequent cancellation of face-to-face classes prevented the surveys from being duly deployed in 2021. For this reason, the eighth cycle of PISA (2021 initially) was postponed to the following year, consequently affecting the date of the subsequent cycle. A noteworthy aspect is that since the first PISA cycle, space has been given to familiarity with technology.</p>
-<p>This study implements a two-stage stratified sample design. The first stage were schools that had 15-year-old students to be surveyed, as the second sampling units were the students within sampled schools (see p.&nbsp;104, OECD, 2024). In terms of participation levels in the latest studies, the cycle conducted in 2018 had 79 countries and economies, while the study conducted in 2022 was made up of 81 participants. Both cycles included OECD and non-OECD members.</p>
+<p>This study implements a two-stage stratified sample design. The first stage were schools that had 15-year-old students to be surveyed, as the second sampling units were the students within sampled schools <span class="citation" data-cites="oecd_pisa_2024">(see p.&nbsp;104, <a href="#ref-oecd_pisa_2024" role="doc-biblioref">OECD, 2024</a>)</span>. In terms of participation levels in the latest studies, the cycle conducted in 2018 had 79 countries and economies, while the study conducted in 2022 was made up of 81 participants. Both cycles included OECD and non-OECD members.</p>
 <p>A striking aspect of PISA is that from the beginning of the study they have contemplated a questionnaire on familiarity with technology. Due to rapid technological transformations, this questionnaire has undergone constant modifications. Nevertheless, digital self-efficacy appears as an inconsistent item in the different PISA cycles. In both 2000 and 2009 digital self-efficacy is absent in the questionnaires, however, in all other cycles it is present.</p>
-<p>Each study has extensive documentation that is open access, which can be found on their respective web pages. There, the implemented questionnaires, technical reports, databases, among other files, can be viewed and downloaded. The openness of their data is of great value, since it allows them to be analyzed in order to generate knowledge in various fields, such as academia or public policy.</p>
-<p>Similarly, it is extremely important to clarify that both TIMMS and PISA use characterization questionnaires as the only resource to address digital issues, which, ultimately, does not allow measuring the competencies or skills of respondents. Not so ICILS, which, in addition to covering characterization elements, deploys a standardized performance assessment test, which has the objective that digital literacy can be measured in a concrete way.</p>
+<p>On the other hand, PISA has an ICT assessment framework, which considers 3 dimensions: ICT Uses; ICT Access and ICT Competencies of students. The latter specifies the most relevant competencies identified in the existing assessment frameworks on digital literacy. It should be noted that the framework provided by PISA goes in the direction of laying the foundations for, in the future, being able to integrate ICT literacy as a specific domain in its study. Thus, the document defines ICT literacy as “the interest, attitude and ability of individuals to use digital technologies and communication tools appropriately to access, manage, integrate and evaluate information, construct new knowledge and communicate with others in order to participate effectively in society” <span class="citation" data-cites="oecd_pisa_2023">(Lenon et al., 2003, cited in <a href="#ref-oecd_pisa_2023" role="doc-biblioref">OECD, 2023</a>)</span>. This definition is not original to PISA, but draws on the conceptualization of Lenon et al.&nbsp;(2003).</p>
+<p>ICT competencies include knowledge, understanding, attitudes, dispositions and skills. Self-efficacy is found among attitudes and dispositions towards ICT. In greater depth, the 5 main areas of ICT competencies are: accessing, managing and evaluating information and data (1); sharing information and communicating (2); transforming and creating digital content (3); individual and collaborative problem solving in digital contexts, and computational thinking (4); appropriate use of ICT (knowledge and skills related to safety, security and risk awareness) (5). In this context, it is made explicit that the measure of self-efficacy is the main instrument for assessing ICT competencies.</p>
+<p>It is worth mentioning that PISA does not explicitly define “digital self-efficacy”, but treats self-efficacy throughout the document in the framework of attitudes and dispositions towards ICT, so there is no specific concept of self-efficacy (see p.&nbsp;277, <span class="citation" data-cites="oecd_pisa_2023">OECD (<a href="#ref-oecd_pisa_2023" role="doc-biblioref">2023</a>)</span>).</p>
 </section>
-<section id="how-these-studies-adress-digital-self-efficacy" class="level2">
-<h2 class="anchored" data-anchor-id="how-these-studies-adress-digital-self-efficacy">How these studies adress Digital Self-efficacy?</h2>
-<p>ICILS, being focused on digital issues, does not have a specific section of the document dealing with it, but the document is framed in this topic. However, the evaluation framework of this study contains a chapter focused on contextual determinants, which is subdivided into the types of context that influence computer and information literacy, such as home context, school context, and individual context. The latter includes attitudinal and behavioral factors. Self-efficacy is placed in this framework.</p>
-<p>To conceptualize self-efficacy, the study paraphrases Bandura’s (1993) definition, stating that self-efficacy is students’ confidence in their own ability to perform tasks in a specific area (Bandura, 1993, as cited in Julian Fraillon et al., 2013). In this way, it is made explicit that the questionnaire aims to measure the confidence expressed by students when performing ICT-related tasks. In this sense, ICILS employs the concept of ICT self-efficacy. In addition, the previous wave of the study is mentioned, emphasizing the identification of two dimensions of self-efficacy: basic and advanced. In this study, they will continue with this distinction. Finally, literature is presented that supports the idea that self-efficacy is a relevant variable for predicting achievement, in this case, in computational and information literacy (see p.&nbsp;41, Fraillon et al., 2019).</p>
-<p>PISA has an ICT assessment framework, which considers 3 dimensions: ICT uses; ICT access and ICT competencies of students. The latter specifies the most relevant competencies identified in existing assessment frameworks on digital literacy. It is worth mentioning that the framework provided by PISA goes in the direction of laying the foundations for, in the future, being able to integrate ICT literacy as a specific domain in its study. Therefore, the document defines ICT literacy as “the interest, attitude and ability of individuals to appropriately use digital technologies and communication tools to access, manage, integrate and evaluate information, construct new knowledge, and communicate with others in order to participate effectively in society” (Lenon et al., 2003, as cited in OECD, 2023). This definition is not original to PISA, but resorts to the conceptualization of Lenon et al.&nbsp;(2003).</p>
-<p>ICT competencies include knowledge, understanding, attitudes, dispositions and skills. Self-efficacy is among the attitudes and dispositions towards ICT. In greater depth, the 5 main areas of ICT competencies are: accessing, managing and evaluating information and data (1); sharing information and communicating (2); transforming and creating digital content (3); individual and collaborative problem solving in digital contexts, and computational thinking (4); appropriate use of ICT (knowledge and skills related to safety, security and risk awareness) (5). In this context, it is made explicit that the measure of self-efficacy is the main assessment instrument for ICT competencies.</p>
-<p>It is worth mentioning that PISA does not explicitly define “digital self-efficacy” but treats self-efficacy throughout the document in the framework of attitudes and dispositions towards ICT, so that a specific concept of self-efficacy is absent (see p.&nbsp;277, OECD, 2023).</p>
-<p>TIMMS is the study with the least extensive evaluation framework on digital issues, so it can be assumed that it is not a section that has been prioritized in the questionnaire. Instead, information on student performance in mathematics and science prevails.</p>
-<p>The TIMMS cycle conducted in 2019 conceptualizes self-efficacy as “Student confidence using technology”, being considered in the section “Student attitudes toward learning”, where student attitudes toward mathematics and science are also highlighted (see pp.&nbsp;72, Ina V.S. Mulllis &amp; Michael O. Martin, 2019). Subsequently, in the 2023 cycle of the same study, the concept is changed to “digital self-efficacy”, which is framed in the section “Information technologies and digital services”. In it, two variables are specified: uses of digital services (1) and digital self-efficacy (2). In neither of the two cycles is there a previous contextualization that supports the presentation of these topics, nor a deep justification of why self-efficacy in digital issues is relevant. Nor is there a conceptualization of self-efficacy as such. Despite all these gaps, the study does employ a specific concept in both of its two cycles (see p.&nbsp;59, Ina V.S. Mulllis et al., 2023).</p>
-<p>Despite the lack of theoretical depth regarding digital self-efficacy, one of the most interesting features of TIMMS is that in addition to containing the digital self-efficacy battery, it has self-efficacy batteries for mathematics and science, which could open certain lines of research regarding this specific topic.</p>
+<section id="advantages-and-disadvantages-of-each-study" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-and-disadvantages-of-each-study">Advantages and disadvantages of each study</h3>
+<p>First of all, ICILS has a large number of variables that are framed within the digital theme, which is of great value taking into account the purpose of this paper. In this sense, ICILS allows innumerable models using these variables to understand how and to what extent they are related to digital self-efficacy.</p>
+<p>Another strength of ICILS is that it presents two types of digital self-efficacy, differentiating it from TIMSS and PISA, since these two only consider a general dimension of digital self-efficacy. From this, ICILS opens the possibility of, firstly, being able to distinguish not only theoretically but empirically two types of self-efficacy, and secondly, it allows us to account for the implications that self-efficacy can have in society, whether general or specialized.</p>
+<p>On the other hand, TIMSS is not framed in digital issues, which is demonstrated by the lack of extension and rigor in the treatment of digital self-efficacy in its documents. Although they present a specific concept that allows the reader to get an idea of what they are talking about, they do not provide greater clarity to understand the concept.</p>
+<p>However, an extremely valuable aspect of TIMSS is that it has self-efficacy batteries in its core subjects, mathematics and science. This opens up the possibility of investigating a possible relationship between different types of self-efficacy, which would be important to consider for future projects.</p>
+<p>PISA has a particular characteristic, which is the approach to digital self-efficacy from its first cycles. Although there are some cycles that do not handle this battery, it would still be possible to study how digital self-efficacy has been measured since the beginning of this study and to what extent its measurement has changed over the years.</p>
+<p>One of the shortcomings of PISA is the lack of a concept for digital self-efficacy. Both ICILS and TIMSS propose a definition of this concept (ICT self-efficacy and Digital self-efficacy, respectively), but PISA leaves the concept to the reader’s interpretation. However, this is somewhat compensated for by the completeness of the theoretical framework on digital issues. As a general aspect to highlight, each study has extensive documentation that is freely accessible, which can be found on their respective web pages. There, the questionnaires applied, technical reports and databases, among other files, can be consulted and downloaded. The openness of their data is of great value, as it allows them to be analyzed to generate knowledge in various fields, such as academia or public policy.</p>
+<p>Finally, it is extremely important to clarify that both TIMMS and PISA use characterization questionnaires as the only resource to address digital issues, which, ultimately, does not allow measuring the competencies or skills of respondents. ICILS does not, which, in addition to covering characterization elements, deploys a standardized performance assessment test, the objective of which is that digital literacy can be measured in a concrete way.</p>
+</section>
+</section>
+<section id="measures-of-digital-self-efficacy" class="level2">
+<h2 class="anchored" data-anchor-id="measures-of-digital-self-efficacy">Measures of digital self-efficacy</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:800px; ">
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Estudios</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">ICILS.2013</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">ICILS.2018</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">PISA.2018</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">PISA.2022</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">TIMSS.2019</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">TIMSS.2023</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Concepto específico</td>
+<td style="text-align: left;">ICT Self-efficacy</td>
+<td style="text-align: left;">ICT Self-efficacy</td>
+<td style="text-align: left;">Self-efficacy</td>
+<td style="text-align: left;">Self-efficacy</td>
+<td style="text-align: left;">Student confidence using technology</td>
+<td style="text-align: left;">Digital self-efficacy</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cantidad de dimensiones</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tipos de dimensiones</td>
+<td style="text-align: left;">Básica y avanzada</td>
+<td style="text-align: left;">General y especializada</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Fraseo del ítem</td>
+<td style="text-align: left;">How well can you do each of these tasks on a computer?</td>
+<td style="text-align: left;">How well can you do each of these tasks on a computer?</td>
+<td style="text-align: left;">Thinking about your experience with digital media and digital devices: to what extent do you disagree or agree with the following statements?</td>
+<td style="text-align: left;">To what extent are you able to do the following tasks when using &lt;digital devices&gt;?</td>
+<td style="text-align: left;">How much do you agree with these statements?</td>
+<td style="text-align: left;">How much do you agree with these statements?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">Básica</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+<td style="text-align: left;">General</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">1) Search for and find a file on your computer</td>
+<td style="text-align: left;">1) Edit digital photographs or other graphics images</td>
+<td style="text-align: left;">1) I feel comfortable using digital devices that I am less familiar with</td>
+<td style="text-align: left;">1) Search for and find relevant information online</td>
+<td style="text-align: left;">1) I am good at using a computer</td>
+<td style="text-align: left;">1)I can write and edit text on a computer, tablet or smartphone</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">2) Edit digital photographs or other graphic images</td>
+<td style="text-align: left;">2) Write or edit a text for a school assignment</td>
+<td style="text-align: left;">2) If my friends and relatives want to buy new digital devices or applications, I can give them advice</td>
+<td style="text-align: left;">2) Asses the quality of information you found online</td>
+<td style="text-align: left;">2) I am good at typing</td>
+<td style="text-align: left;">2)I can create school presentations using a computer, tablet or smartphone</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">3) Create or edit documents (for example assignments for school)</td>
+<td style="text-align: left;">3) Search for and find relevant information for a school project on Internet</td>
+<td style="text-align: left;">3) I feel comfortable using digital devices at home</td>
+<td style="text-align: left;">3) Share practical information with a group of students</td>
+<td style="text-align: left;">3) I can use a touchscreen on a computer, tablet or smartphone</td>
+<td style="text-align: left;">3)I can create, tables, charts and graphs using a computer, tablet or smartphone</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">4) Search for and find information you need on the Internet</td>
+<td style="text-align: left;">4) Create a multimedia presentation (with sound, pictures, or video)</td>
+<td style="text-align: left;">4) When I come across problems digital devices, I think I can solve them</td>
+<td style="text-align: left;">4) Collaborate with other students on a group assesment</td>
+<td style="text-align: left;">4) It is easy for me to find information on the Internet</td>
+<td style="text-align: left;">4)I can find information that I need online</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">5) Create a multi-media presentation (with sound, pictures, or video)</td>
+<td style="text-align: left;">5) Upload text, images, or video to an online profile</td>
+<td style="text-align: left;">5) If my friends and relatives have a problem with digital devices, I can help them</td>
+<td style="text-align: left;">5) Explain to other students how to share digital content online on or a school platform</td>
+<td style="text-align: left;">5) I can look up the meanings of words on Internet</td>
+<td style="text-align: left;">5)I can tell if a website is trustworthy</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">6) Upload text, images or video to an online profile</td>
+<td style="text-align: left;">6) Insert an image nto a document or message</td>
+<td style="text-align: left;">6) If I need new softare, I install it by myself</td>
+<td style="text-align: left;">6) Write or edit text for a school assignment</td>
+<td style="text-align: left;">6) I can write sentences and paragraphs using a computer</td>
+<td style="text-align: left;">6)I can easily do new things on computers, laptops or smartphones</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">7) Install a program or [app]</td>
+<td style="text-align: left;">7) I read information about digital devices to be independent</td>
+<td style="text-align: left;">7) Collect and record data (e.g. using data loggers, &lt;Microsoft Access&gt;, &lt;Google form&gt;, spreadsheets)</td>
+<td style="text-align: left;">7) I can edit on a computer</td>
+<td style="text-align: left;">7)I can help my friends or family members with using their computers, laptops and smartphones</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">8) Judge whether you can trust information you find on internet</td>
+<td style="text-align: left;">8) I use digital devices as I want to use them</td>
+<td style="text-align: left;">8) Create a multimedia presentation (with sound, pictures and video)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">9) If I have a problem with digital devices I start to solve it on my own</td>
+<td style="text-align: left;">9) Create, update and mantain a webpage or blog</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">10) If I need a new application, I choose it by myself</td>
+<td style="text-align: left;">10) Change the setting of a device or app in order to protect my data and privacy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">11) Select the most efficient programme or app that allows me to carry out a specific task</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">12) Create a computer program (e.g. in &lt;Scratch&gt;, &lt;Python&gt;, &lt;Java&gt;)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">13) Identify the source of an error in a software afeter considering a list of potential causes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">Avanzada</td>
+<td style="text-align: left;">Especializada</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">1) Use software to find and get rid of viruses</td>
+<td style="text-align: left;">1)Create a database (e.g., using [Microsoft Access])</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">2) Create a database (for example using [Microsoft Access])</td>
+<td style="text-align: left;">2)Build or edit a webpage</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">3) Build or edit a webpage</td>
+<td style="text-align: left;">3)Create a computer program, or [app] (e.g., in [Basic, Visual Basic])</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">4) Change the settings on your computer to improve the way it operates or to fix problems</td>
+<td style="text-align: left;">4)Set up a local area network of computers or other ICT</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Ítems que componen la batería</td>
+<td style="text-align: left;">5) Use a spreadsheet to do calculations, store data or plot a graph</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">6) Create a computer program or macro (for example in [Basic, Visual Basic])</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">7) Set up a computer network</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Categorías de respuesta</td>
+<td style="text-align: left;">I know how to do this (1); I could work out how to do this (2); I do not think I could do this (3)</td>
+<td style="text-align: left;">I know how to do this (1); I could work out how to do this (2); I do not think I could do this (3)</td>
+<td style="text-align: left;">Strongly disagree (1); Disagree (2); Agree (3); Strongly agree (4)</td>
+<td style="text-align: left;">I cannot do this (1), I struggle to do this on my own (2), I can do with a bit of effort (3), i can easily do this (4), I don´t know what this is (5)</td>
+<td style="text-align: left;">Agree a lot (1); Agree a little (2); Disagree a little (3); Disagree a lot (4)</td>
+<td style="text-align: left;">Agree a lot (1); Agree a little (2); Disagree a little (3); Disagree a lot (4)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Diferencias entre ciclo</td>
+<td style="text-align: left;">Dimensiones de autoeficacia Enunciados de las baterías</td>
+<td style="text-align: left;">Dimensiones de autoeficacia Enunciados de las baterías</td>
+<td style="text-align: left;">Fraseo del ítem Enunciados de las baterías Categorías de respuesta</td>
+<td style="text-align: left;">Fraseo del ítem Enunciados de las baterías Categorías de respuesta</td>
+<td style="text-align: left;">Concepto de autoeficacia Enunciados de las baterías</td>
+<td style="text-align: left;">Concepto de autoeficacia Enunciados de las baterías</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+<p>Table 3 shows the digital self-efficacy batteries belonging to the last two cycles of each study mentioned above, including some of their characteristics such as item phrasing and/or response categories. This was done in order to illustrate the differences that exist between the different cycles of a study, as well as the differences between studies.</p>
+<p>Firstly, in ICILS, it can be observed that the specific concept with which they deal with digital self-efficacy has been maintained, using “ICT Self-efficacy” in its two cycles. Likewise, both the item phrasing and the response categories that were proposed in the first cycle of the study remained unchanged in the second cycle.</p>
+<p>On the contrary, the change in the conceptualization of the type of ICT self-efficacy dimensions stands out, since, while in the 2013 cycle they were defined as “basic and advanced”, in the 2018 cycle this was modified to “general and specialized”. Now, the most significant change is in the items that make up the ICT Self-efficacy batteries in the two cycles. In the basic-general dimension, for the 2013 cycle there are 6 items, finding a tendency towards digital editing and searching tasks, while in the 2018 cycle there are 8 items in total, including topics of program installation and information evaluation. On the other hand, in the advanced-specialized dimension there is a decrease of items when comparing the first and second cycle. In 2013 this battery was made up of 7 items, and in 2018 only 4, leaving aside tasks such as removing viruses from a computer or using spreadsheets.</p>
+<p>The digital-themed self-efficacy batteries in PISA change almost all of their characteristics from one cycle to the next, only keeping the understanding of self-efficacy on a single dimension. First, the item phrasing in the 2018 cycle attends to the extent to which the respondent agrees or disagrees with the statements to be presented. In contrast, in the 2022 cycle it refers to the extent to which the respondent is able to perform the tasks that will be presented. These changes in the phrasing of the item also have implications for the response categories of the cycles, since they point to different questions. For the 2018 cycle the responses are based on a scale ranging from “strongly disagree” to “strongly agree,” while the response categories for the last cycle range from “I cannot do it” to “I can do it easily.”</p>
+<p>The items of the PISA batteries also underwent several changes. First, the 2022 cycle has 3 more items compared to the 2018 cycle. To elaborate on this, the items of the first cycle of this study are mainly made up of statements that allude to the feeling of comfort with the use of digital services, as well as tasks that point to autonomy in the digital sphere. In contrast, the 2022 items focus on task performance, including skills ranging from practical knowledge to critical evaluation. In addition, it can be generally noted that the battery is constructed in such a way that the first items point to tasks that do not demand great complexity, while the last items require much more in-depth knowledge and skills in the digital domain.</p>
+<p>The measurement of digital self-efficacy in TIMSS has maintained certain characteristics, specifically the consideration of a single self-efficacy dimension, item phrasing and subsequent response categories. The question that supports this battery expresses the degree to which one agrees with the statements, so the response categories range from “strongly agree” to “strongly disagree”.</p>
+<p>Now, the concept with which self-efficacy in digital subjects is treated is different between the two TIMMS cycles. For the 2019 cycle the concept “Student confidence using techonology” was used, which in the 2023 cycle would change to “Digital Self-efficacy”.</p>
+<p>Another aspect that underwent modifications was the construction of the digital self-efficacy batteries. In the previous cycle, the battery consisted of 7 items, which focused on practical tasks of a low level of complexity; among them, “being good at typing” or “being able to use a touchscreen”. In TIMSS 2023, the same number of items are observed, but they address tasks that require greater knowledge in the field, such as creating presentations or graphics, or feeling able to help others in the use of digital services.</p>
+<p>Between ICILS, PISA and TIMSS, major differences can be noted in terms of the characteristics of their self-efficacy batteries in the digital domain. First, TIMSS is the only study that has modified the conceptualization of self-efficacy in relation to technology. However, ICILS stands out for comprising two dimensions of digital self-efficacy, whereas the other studies only take into account one generalized dimension. On the other hand, the item phrasings and the response categories derived from them differ between each study. The closest studies in these measurement characteristics are PISA 2018 with the two TIMMS cycles when measuring the degree of agreement.</p>
+<p>The greatest differences are found in the items that make up the digital self-efficacy batteries. Each study has undergone transformations in the items that make up the batteries, some including a greater number of statements, or adding tasks of greater complexity and omitting aspects that were measured in their respective previous cycles.</p>
+<p>This section conducted a comparative analysis of the construction of the digital self-efficacy batteries, observing the items that constitute such batteries in the different cycles of the different studies, as well as the differences presented intra-cycle and intra-study. The next section seeks to deepen the analysis of how self-efficacy in digital issues has been measured in the studies presented in the document, through an evaluation based on the conceptual framework provided by Bandura, which was presented in the first part of this working paper.</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-fraillon_contextual_2019" class="csl-entry" role="listitem">
+Fraillon, J., Ainley, J., Schulz, W., Duckworth, D., &amp; Friedman, T. (2019). Contextual framework. In <em><span>IEA International Computer</span> and <span>Information Literacy Study</span> 2018 <span>Assessment Framework</span></em> (pp. 33–42). Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-19389-8_4">https://doi.org/10.1007/978-3-030-19389-8_4</a>
+</div>
+<div id="ref-inav.s.mulllis_timss_2019" class="csl-entry" role="listitem">
+Ina V.S. Mulllis, &amp; Michael O. Martin. (2019). <span>TIMSS</span> 2019 <span>Context Questionnaire Framework</span>. In <em><span>TIMSS</span> 2019 <span>Assessment Frameworks</span></em>. <span>TIMSS &amp; PIRLS International Study Center, Lynch School of Education, Boston College and International Association for the Evaluation of Educational Achievement (IEA)</span>.
+</div>
+<div id="ref-inav.s.mulllis_timss_2023" class="csl-entry" role="listitem">
+Ina V.S. Mulllis, Michael O. Martin, &amp; Matthias von Davier. (2023). <span>TIMSS</span> 2023 <span>Context Questionnaire Framework</span>. In <em><span>TIMSS</span> 2023 <span>Assessment Frameworks</span></em>. <span>TIMSS &amp; PIRLS International Study Center, Lynch School of Education and Human Development, Boston College and International Association for the Evaluation of Educational Achievement (IEA)</span>.
+</div>
+<div id="ref-julianfraillon_sample_2020" class="csl-entry" role="listitem">
+Julian Fraillon, John Ainley, Wolfram Schulz, Tim Friedman, &amp; Daniel Duckworth. (2020). Sample design and implementation. In <em><span>IEA International Computer</span> and <span>Information Literacy Study</span> 2018 <span>Technical Report</span></em>. International Association for the Evaluation of Educational Achievement (IEA).
+</div>
+<div id="ref-julianfraillon_iea_2013" class="csl-entry" role="listitem">
+Julian Fraillon, Wolfram Schulz, &amp; John Ainley. (2013). <em><span>IEA International Computer</span> and <span>Information Literacy Study</span> 2013 <span>Assessment Framework</span></em>. International Association for the Evaluation of Educational Achievement (IEA).
+</div>
+<div id="ref-oecd_pisa_2023" class="csl-entry" role="listitem">
+OECD. (2023). <span>PISA</span> 2022 <span>ICT Framework</span>. In <em><span>PISA</span> 2022 <span>Assessment</span> and <span>Analytical Framework</span></em> (pp. 238–285). OECD Publishing.
+</div>
+<div id="ref-oecd_pisa_2024" class="csl-entry" role="listitem">
+OECD. (2024). <em><span>PISA</span> 2022 <span>Technical Report</span></em>. OECD Publishing.
+</div>
+<div id="ref-siegelp._timss_2024" class="csl-entry" role="listitem">
+Siegel, P., &amp; Foy, P. (2024). <span>TIMSS</span> sample design. In <em><span>TIMSS</span> 2023 <span>Technical Report</span> (<span>Methods</span> and <span>Procedures</span>)</em> (pp. 3.1–3.30). Boston College, TIMSS &amp; PIRLS International Study Center.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

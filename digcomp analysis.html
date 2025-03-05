@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="digcomp analysis_files/libs/clipboard/clipboard.min.js"></script>
@@ -72,11 +58,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <link href="digcomp analysis_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
+</head><body class="fullcontent"><img src="../input/jpg/nudos_bajada.jpg" style="width: 100%;" class="header-image">
 
 
-</head>
+<link rel="stylesheet" href="libs/nudos.css">
 
-<body class="fullcontent">
+
+
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
@@ -109,37 +97,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="digcomp" class="level2">
 <h2 class="anchored" data-anchor-id="digcomp">DigComp</h2>
-<p>The European Commission recognizes eight key skills that citizens must acquire to enable them to actively participate in society, among which are digital competencies. This is based on the growing presence of technology in human life, which has given rise to problems such as the digital divide. In this regard, the European Commission considers that digital inclusion currently depends more on knowledge, skills and attitudes than on access and use (Erstad, 2010).</p>
-<p>Due to the need to promote digital inclusion, the DigComp is created (Ferrari, 2013), proposing a framework of competencies to perform adequately in the aforementioned area. Five areas of competence are presented: information, communication, creation, security and problem solving. Subsequently, each of these competency areas is dissected into specific competencies. In addition, three levels of proficiency are presented for each competency area: foundation, intermediate and advanced.</p>
-<p>Now, since its creation in 2013, new iterations have emerged that have sought to improve the initial DigComp framework. The first iteration is called DigComp 2.0 (Vuorikari et al, 2016). In it, some vocabulary issues are clarified with respect to the first study, especially by relieving the “digital” character in most competencies. For example, the area “information” becomes “information and data literacy”, or “content creation” is modified to “digital content creation”. These decisions are justified in the document due to the increasing pace of transformation in the digital world. In addition, the description of specific competencies is updated.</p>
-<p>Subsequently, DigComp 2.1 is presented (Carretero et al, 2017). In this second iteration, they increase the levels of mastery from 3 to 8. This broadening and deepening of such levels is done with the idea of helping the design of assessment tools for the development of citizens’ competencies. The 8 levels of mastery are based on Bloom’s taxonomy and the vocabulary of the European Qualification Framework (EQF). The 8 levels of mastery are categorized by each specific competency, so that there are a total of 168 descriptors. In addition, the examples of each competency in the educational and work environment are updated. With this, the framework offered by the DigComp becomes much more complex with respect to previous editions, proposing a rigorous design but at the same time understandable thanks to a clear and well-structured design.</p>
-<p>Finally, this is the third iteration and the most updated version of the digital competencies framework called DigComp 2.2 (Vuorikari et al, 2022). This document uses the same framework proposed in the previous version, but in addition each descriptor has examples based on the fourth dimension (knowledge, skills and attitudes). In addition, there is the novelty of including artificial intelligence topics.</p>
+<p>The European Commission recognizes eight key skills that citizens must acquire to enable them to actively participate in society, among which are digital competencies. This is based on the growing presence of technology in human life, which has given rise to problems such as the digital divide. In this regard, the European Commission considers that digital inclusion currently depends more on knowledge, skills and attitudes than on access and use <span class="citation" data-cites="erstad_educating_2010">(<a href="#ref-erstad_educating_2010" role="doc-biblioref">Erstad, 2010</a>)</span>.</p>
+<p>Due to the need to promote digital inclusion, the DigComp is created <span class="citation" data-cites="ferrari_digcomp_2013">(<a href="#ref-ferrari_digcomp_2013" role="doc-biblioref">Ferrari, 2013</a>)</span>, proposing a framework of competencies to perform adequately in the aforementioned area. Five areas of competence are presented: information, communication, creation, security and problem solving. Subsequently, each of these competency areas is dissected into specific competencies. In addition, three levels of proficiency are presented for each competency area: foundation, intermediate and advanced.</p>
+<p>Now, since its creation in 2013, new iterations have emerged that have sought to improve the initial DigComp framework. The first iteration is called DigComp 2.0 <span class="citation" data-cites="vuorikari_digcomp_2016">(<a href="#ref-vuorikari_digcomp_2016" role="doc-biblioref">Vuorikari et al., 2016</a>)</span>. In it, some vocabulary issues are clarified with respect to the first study, especially by relieving the “digital” character in most competencies. For example, the area “information” becomes “information and data literacy”, or “content creation” is modified to “digital content creation”. These decisions are justified in the document due to the increasing pace of transformation in the digital world. In addition, the description of specific competencies is updated.</p>
+<p>Subsequently, DigComp 2.1 is presented <span class="citation" data-cites="carretero_digcomp_2017">(<a href="#ref-carretero_digcomp_2017" role="doc-biblioref">Carretero et al., 2017</a>)</span>. In this second iteration, they increase the levels of mastery from 3 to 8. This broadening and deepening of such levels is done with the idea of helping the design of assessment tools for the development of citizens’ competencies. The 8 levels of mastery are based on Bloom’s taxonomy and the vocabulary of the European Qualification Framework (EQF). The 8 levels of mastery are categorized by each specific competency, so that there are a total of 168 descriptors. In addition, the examples of each competency in the educational and work environment are updated. With this, the framework offered by the DigComp becomes much more complex with respect to previous editions, proposing a rigorous design but at the same time understandable thanks to a clear and well-structured design.</p>
+<p>Finally, this is the third iteration and the most updated version of the digital competencies framework called DigComp 2.2 <span class="citation" data-cites="vuorikari_digcomp_2022">(<a href="#ref-vuorikari_digcomp_2022" role="doc-biblioref">Vuorikari et al., 2022</a>)</span>. This document uses the same framework proposed in the previous version, but in addition each descriptor has examples based on the fourth dimension (knowledge, skills and attitudes). In addition, there is the novelty of including artificial intelligence topics.</p>
 </section>
 <section id="digcomp-and-digital-self-efficacy-assessment" class="level2">
 <h2 class="anchored" data-anchor-id="digcomp-and-digital-self-efficacy-assessment">DigComp and Digital Self-efficacy Assessment</h2>
 <p>Based on the latest update of the DigComp, the following table will be analyzed, which is composed of the digital self-efficacy batteries used by ICILS, PISA and TIMSS in their last two cycles, respectively.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'kableExtra' was built under R version 4.3.3</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(openxlsx)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'openxlsx' was built under R version 4.3.3</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>table <span class="ot">&lt;-</span> openxlsx<span class="sc">::</span><span class="fu">read.xlsx</span>(<span class="st">"input/tbl/digcomp_tbl.xlsx"</span>, <span class="at">fillMergedCells =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>table[<span class="fu">is.na</span>(table)] <span class="ot">&lt;-</span> <span class="st">""</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>table <span class="sc">|&gt;</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  knitr<span class="sc">::</span><span class="fu">kable</span>() <span class="sc">|&gt;</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">scroll_box</span>(<span class="at">height=</span><span class="st">"800px"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:800px; ">
 <table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Estudios</th>
-<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Competencias</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">ILSA's</th>
+<th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">Competences</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">ICILS.2013</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">ICILS.2018</th>
 <th data-quarto-table-cell-role="th" style="text-align: left; position: sticky; top: 0; background-color: #FFFFFF;">PISA.2018</th>
@@ -150,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Browsing, searching and filtering data, information and digital content</td>
 <td style="text-align: left;">Search for and find a file on your computer</td>
 <td style="text-align: left;">Upload text, images, or video to an online profile</td>
@@ -160,17 +134,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">I can find information that I need online</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Browsing, searching and filtering data, information and digital content</td>
 <td style="text-align: left;">Search for and find information you need on the Internet</td>
 <td style="text-align: left;">Search for and find relevant information for a school project on Internet</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Search for and find relevant information online</td>
 <td style="text-align: left;">It is easy for me to find information on the Internet</td>
-<td style="text-align: left;">I can find information that I need online</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Evaluating data, information and digital content</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Judge whether you can trust information you find on internet</td>
@@ -180,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">I can tell if a website is trustworthy</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Managing data, information and digital content</td>
 <td style="text-align: left;">Upload text, images or video to an online profile</td>
 <td style="text-align: left;">Insert an image into a document or message</td>
@@ -190,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Managing data, information and digital content</td>
 <td style="text-align: left;">Use a spreadsheet to do calculations, store data or plot a graph</td>
 <td style="text-align: left;">Set up a local area network of computers or other ICT</td>
@@ -200,27 +174,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Alfabetización digital</td>
-<td style="text-align: left;">Managing data, information and digital content</td>
-<td style="text-align: left;">Use a spreadsheet to do calculations, store data or plot a graph</td>
-<td style="text-align: left;">Set up a local area network of computers or other ICT</td>
-<td style="text-align: left;">I feel comfortable using digital devices at home</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;">I am good at typing</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Alfabetización digital</td>
+<td style="text-align: left;">Information and data literacy</td>
 <td style="text-align: left;">Managing data, information and digital content</td>
 <td style="text-align: left;">Set up a computer network</td>
 <td style="text-align: left;">Install a program or [app]</td>
 <td style="text-align: left;">I use digital devices as I want to use them</td>
 <td style="text-align: left;"></td>
+<td style="text-align: left;">I am good at typing</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Information and data literacy</td>
+<td style="text-align: left;">Managing data, information and digital content</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">I can write sentences and paragraphs using a computer</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Interacting through digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -230,7 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Sharing through digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -240,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Engaging in citizenship through digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -250,7 +224,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Collaborating through digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -260,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Collaborating through digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -270,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Netiquette</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -280,7 +254,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Comunicación y colaboración</td>
+<td style="text-align: left;">Communication and collaboration</td>
 <td style="text-align: left;">Managing digital identity</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -290,7 +264,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Developing digital content</td>
 <td style="text-align: left;">Create or edit documents (for example assignments for school)</td>
 <td style="text-align: left;">Create a multimedia presentation (with sound, pictures, or video)</td>
@@ -300,37 +274,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">I can create school presentations using a computer, tablet or smartphone</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Developing digital content</td>
 <td style="text-align: left;">Create a multi-media presentation (with sound, pictures or video)</td>
-<td style="text-align: left;">Create a multimedia presentation (with sound, pictures, or video)</td>
+<td style="text-align: left;">Build or edit a webpage</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Create a multimedia presentation (with sound, pictures and video)</td>
+<td style="text-align: left;">Create, update and mantain a webpage or blog</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">I can create school presentations using a computer, tablet or smartphone</td>
+<td style="text-align: left;">I can create, tables, charts and graphs using a computer, tablet or smartphone</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Developing digital content</td>
 <td style="text-align: left;">Create a database (for example using [Microsoft Access])</td>
-<td style="text-align: left;">Create a multimedia presentation (with sound, pictures, or video)</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Create, update and mantain a webpage or blog</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">I can create, tables, charts and graphs using a computer, tablet or smartphone</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Developing digital content</td>
 <td style="text-align: left;">Build or edit a webpage</td>
-<td style="text-align: left;">Build or edit a webpage</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Create, update and mantain a webpage or blog</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">I can create, tables, charts and graphs using a computer, tablet or smartphone</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Integrating and re-elaborating digital content</td>
 <td style="text-align: left;">Edit digital photographs or other graphic images</td>
 <td style="text-align: left;">Edit digital photographs or other graphics images</td>
@@ -340,17 +314,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">I can write and edit text on a computer, tablet or smartphone</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Integrating and re-elaborating digital content</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">Write or edit a text for a school assignment</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Write or edit text for a school assignment</td>
-<td style="text-align: left;">I can edit on a computer</td>
-<td style="text-align: left;">I can write and edit text on a computer, tablet or smartphone</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Copyright and licenses</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -360,7 +334,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Programming</td>
 <td style="text-align: left;">Create a computer program or macro (for example in [Basic, Visual Basic])</td>
 <td style="text-align: left;">Create a database (e.g., using [Microsoft Access])</td>
@@ -370,17 +344,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Creación de contenido digital</td>
+<td style="text-align: left;">Digital content creation</td>
 <td style="text-align: left;">Programming</td>
-<td style="text-align: left;">Create a computer program or macro (for example in [Basic, Visual Basic])</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;">Create a computer program, or [app] (e.g., in [Basic, Visual Basic])</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;">Create a computer program (e.g. in &lt;Scratch&gt;, &lt;Python&gt;, &lt;Java&gt;)</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Ciberseguridad</td>
+<td style="text-align: left;">Safety</td>
 <td style="text-align: left;">Protecting devices</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -390,7 +364,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Ciberseguridad</td>
+<td style="text-align: left;">Safety</td>
 <td style="text-align: left;">Protecting personal data and privacy</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -400,7 +374,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Ciberseguridad</td>
+<td style="text-align: left;">Safety</td>
 <td style="text-align: left;">Protecting health and well-being</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -410,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Ciberseguridad</td>
+<td style="text-align: left;">Safety</td>
 <td style="text-align: left;">Protecting the environment</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -420,7 +394,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Solving technical problems</td>
 <td style="text-align: left;">Use software to find and get rid of viruses</td>
 <td style="text-align: left;"></td>
@@ -430,7 +404,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Solving technical problems</td>
 <td style="text-align: left;">Change the settings on your computer to improve the way it operates or to fix problems</td>
 <td style="text-align: left;"></td>
@@ -440,7 +414,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Identifying needs and technological responses</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -450,17 +424,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Identifying needs and technological responses</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;">If I need new software, I install it by myself</td>
-<td style="text-align: left;">Identify the source of an error in a software after considering a list of potential causes</td>
+<td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Identifying needs and technological responses</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -470,7 +444,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Creatively using digital technologies</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -480,7 +454,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td style="text-align: left;">I can easily do new things on computers, laptops or smartphones</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Resolución de problemas</td>
+<td style="text-align: left;">Problem solving</td>
 <td style="text-align: left;">Identifying digital competence gaps</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -495,12 +469,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 </div>
-<p>As can be seen, in the two cycles of ICILS most of its items are concentrated in the areas of information and data literacy and digital content creation. In fact, only in the 2013 cycle there are items that are not in the two aforementioned areas and, instead, integrate the area of problem solving.</p>
-<p>Moving on to PISA, in the first cycle of this study, it is observed that the items mostly occupy the areas of information and data literacy and problem solving, although it is also necessary to mention that they integrate an item in communication and collaboration. In the other two remaining areas, no items are conceived. However, in the second cycle, the construction of the items changes profoundly, which results in the existence of at least one item in each competency area.</p>
-<p>Finally, in the first TIMSS cycle, almost all of the items cover only the area of information and data literacy, while the remaining one is in digital content creation. For the 2023 cycle, the number of items is balanced among some areas, which is demonstrated by the fact that the items occupy the two areas mentioned above, with problem solving as a novelty.</p>
+<p>As can be seen, in the two cycles of ICILS most of its items are concentrated in the areas of information and data literacy and digital content creation. It could be said that ICILS regresses in the coverage of competency areas, since in the 2013 cycle at least two items were assigned to the Problem Solving area, but in its subsequent cycle they forget about it, while both Communication and Collaboration and Safety were not considered at all.</p>
+<p>Moving on to PISA, in the first cycle of this study it is observed that the items mostly occupy the areas of information and data literacy and problem solving. Although there is one item in Communication and Collaboration, the disproportion of the items in the other areas is evident. However, in the second cycle there is evidence of a transformation in the construction of the items, which ends up resolving to a large extent the shortcoming of the 2018 cycle, as each competency area is covered in the PISA 2022 digital self-efficacy battery.</p>
+<p>In the first TIMSS cycle, on the other hand, almost all of the items cover only the area of information and data literacy, while the remaining one is located in digital content creation, a pattern shared with ICILS. For the 2023 cycle it is almost the same scenario, which is demonstrated by the fact that the items occupy the two areas already mentioned above, and there is only one item that is framed in Problem Solving.</p>
+<p>From the above analysis, it can be stated that both ICILS and TIMSS have built their self-efficacy batteries focusing on literacy issues and digital content creation, but notably lack items that consider communication and collaboration, safety, and problem solving.</p>
+<p>PISA is the study that has put the most effort into extending the measurement of digital self-efficacy to the other skill areas, reflected in the change in batteries between its two cycles. Even so, areas such as Safety were barely considered with only one item, and Problem Solving with two.</p>
+<p>It is unknown whether these three ILSAs have used the DigComp framework to construct their digital self-efficacy batteries, but it is clear that it is a pending task to rethink both the theoretical and empirical bases to which these studies resort for the formulation of these items, in order to sophisticate and, in sum, improve the measurement of digital self-efficacy.</p>
+</section>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<p>The digital self-efficacy battery created by Ulfert-Blank &amp; Schmidt (2022) is the ideal example for assessing this construct, since it offers one item for each subcompetency that is part of the competency areas, accounting for a total of 21 items. Using this battery as a model for the formulation of subsequent digital self-efficacy batteries would be completely fruitful for the ILSA field, since so far the existing batteries are not even able to cover all competency areas in a balanced way.</p>
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-carretero_digcomp_2017" class="csl-entry" role="listitem">
+Carretero, S., Vuorikari, R., &amp; Punie, Y. (2017). <em><span>DigComp</span> 2.1: <span>The Digital Competence Framework</span> for <span>Citizens</span></em> (pp. 1–44). European Comission.
+</div>
+<div id="ref-erstad_educating_2010" class="csl-entry" role="listitem">
+Erstad, O. (2010). Educating the <span>Digital Generation</span>. <em>Nordic Journal of Digital Literacy</em>, <em>5</em>(1), 56–71. <a href="https://doi.org/10.18261/ISSN1891-943X-2010-01-05">https://doi.org/10.18261/ISSN1891-943X-2010-01-05</a>
+</div>
+<div id="ref-ferrari_digcomp_2013" class="csl-entry" role="listitem">
+Ferrari, A. (2013). <em><span>DIGCOMP</span>: <span>A Framework</span> for <span>Developing</span> and <span>Understanding Digital Competence</span> in <span>Europe</span>.</em> (pp. 1–46). European Comission.
+</div>
+<div id="ref-vuorikari_digcomp_2022" class="csl-entry" role="listitem">
+Vuorikari, R., Kluzer, S., &amp; Punie, Y. (2022). <em><span>DigComp</span> 2.2: <span>The Digital Competence Framework</span> for <span>Citizens</span></em> (pp. 1–127). European Comission.
+</div>
+<div id="ref-vuorikari_digcomp_2016" class="csl-entry" role="listitem">
+Vuorikari, R., Punie, Y., Carretero, S., &amp; Van den Brande, L. (2016). <em><span>DigComp</span> 2.0: <span>The Digital Competence Framework</span> for <span>Citizens</span></em> (pp. 1–40). European Comission.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
